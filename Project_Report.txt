@@ -1,0 +1,176 @@
+QUIZ APPLICATION
+MINI PYTHON PROJECT REPORT
+
+Submitted by:
+Nairuthya B.R.
+BCA
+
+TASK 4: MINI PYTHON PROJECT
+
+1. INTRODUCTION
+The Quiz Application is a desktop graphical Python project. Users answer ten
+multiple-choice questions in a window and receive a score, percentage and
+grade. Completed results are appended to a text file.
+
+2. OBJECTIVES
+- To develop a functional Python application.
+- To use Python programming concepts learned in Weeks 1-4.
+- To accept user input and display results through a graphical interface.
+- To use conditions, functions, lists and dictionaries.
+- To demonstrate file handling and exception handling.
+- To use Python libraries.
+
+3. SOFTWARE REQUIREMENTS
+- Python 3
+- Tkinter (included with most standard Python installations)
+- Visual Studio Code or another Python IDE
+- Windows, Linux or macOS
+
+4. PROJECT FEATURES
+- Desktop graphical user interface
+- Name entry and input validation
+- Ten multiple-choice questions in random order
+- On-screen answer selection and feedback
+- Automatic score, percentage and grade calculation
+- Results appended to quiz_results.txt beside Quiz.py
+- Try Again and Exit buttons
+
+5. CONCEPTS USED
+
+5.1 VARIABLES AND DATA TYPES
+The project uses variables such as name, score, total, percentage and grade.
+Data types include strings, integers, floats, lists and dictionaries.
+
+5.2 INPUT AND OUTPUT
+Tkinter entry fields and radio buttons collect the user's name and answers.
+Labels and message boxes display questions, feedback and results.
+
+5.3 CONDITIONAL STATEMENTS
+if, elif and else are used to check answers and calculate the grade. Input
+validation prevents starting without a name or submitting without an answer.
+
+5.4 LOOPS
+A for loop creates the answer options for each question. A loop also clears
+the previous screen's widgets when the application changes screens.
+
+5.5 FUNCTIONS AND EVENT HANDLING
+Functions calculate and save results, start the quiz, display questions,
+check answers and move between screens. Tkinter button and keyboard events
+call these functions.
+
+5.6 DATA STRUCTURES
+Questions are stored in a list of dictionaries. Each dictionary contains a
+question, four options and the correct answer.
+
+5.7 FILE HANDLING
+The application appends completed results to quiz_results.txt in the same
+folder as Quiz.py. The file is created automatically when needed.
+
+5.8 EXCEPTION HANDLING
+File-saving errors are caught and shown in the results window instead of
+being silently ignored.
+
+5.9 PYTHON LIBRARIES
+random shuffles the questions. datetime records the result date and time.
+tkinter and tkinter.ttk create the graphical user interface.
+
+6. ALGORITHM
+Step 1: Open the quiz window.
+Step 2: Enter a name and select Start Quiz.
+Step 3: Copy and shuffle the questions.
+Step 4: Display a question and its answer options.
+Step 5: Select an option and submit the answer.
+Step 6: Display feedback and update the score if correct.
+Step 7: Continue until all questions have been answered.
+Step 8: Calculate and display the score, percentage and grade.
+Step 9: Append the result to quiz_results.txt.
+Step 10: Choose Try Again or Exit.
+
+7. SCREEN FLOW
+START WINDOW
+  |
+  v
+Enter Name -> Start Quiz
+  |
+  v
+Display Question and Options
+  |
+  v
+Select Answer -> Submit -> Show Feedback
+  |
+  v
+Next Question
+  |
+  v
+All Questions Answered?
+  |
+  v
+Display and Save Result
+  |
+  +---- Try Again ----> START WINDOW
+  |
+  +---- Exit ---------> CLOSE
+
+8. GRAPHICAL OUTPUT
+The start window contains the quiz title, a name field and a Start Quiz
+button. During the quiz, the window shows progress, the current question,
+selectable answer options and feedback. The final screen shows the user's
+score, percentage, grade and whether the result was saved successfully.
+
+9. TEST CASES
+
+Test Case 1:
+Action: Enter a name and start the quiz.
+Expected result: The first randomized question is displayed.
+Result: Pass.
+
+Test Case 2:
+Action: Start without entering a name.
+Expected result: A warning asks the user to enter a name.
+Result: Pass.
+
+Test Case 3:
+Action: Submit without selecting an answer.
+Expected result: A message asks the user to select an option.
+Result: Pass.
+
+Test Case 4:
+Action: Complete all ten questions.
+Expected result: The score and grade are displayed and the result is saved.
+Result: Pass.
+
+Test Case 5:
+Action: Select Try Again or Exit on the result screen.
+Expected result: The start screen is displayed again or the window closes.
+Result: Pass.
+
+10. ADVANTAGES
+- Easy to use through a desktop window.
+- Random question order makes each attempt different.
+- Provides immediate answer feedback.
+- Automatically calculates and saves results.
+- Demonstrates important Python programming concepts.
+
+11. LIMITATIONS
+- Questions are stored in the source code.
+- Results are stored in a text file instead of a database.
+- Tkinter must be available in the Python installation.
+
+12. FUTURE ENHANCEMENTS
+- Add more questions and different categories.
+- Add a timer and a leaderboard.
+- Store results in a database.
+- Add more interface themes and accessibility options.
+
+13. CONCLUSION
+The Quiz Application demonstrates Python variables, data types, graphical
+input and output, conditional statements, loops, functions, data structures,
+file handling, exception handling and libraries. Its desktop interface makes
+the quiz straightforward to use, and completed results are saved for later
+reference.
+
+14. SUBMISSION
+The project can be submitted using:
+- GitHub repository link, or
+- PDF project report, or
+- Google Drive link containing the project files and/or PDF report.

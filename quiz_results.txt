@@ -1,0 +1,10 @@
+Quiz results will appear here after you run Quiz.py.
+
+========================================
+QUIZ RESULT
+========================================
+Name: Nairuthya
+Score: 3/10
+Percentage: 30.00%
+Grade: Fail
+Date and Time: 2026-10-21 15:22:23
